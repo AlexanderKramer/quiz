@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - #2 y2020</title>
+  
+  
+  
+  
+<style>
+body {
+  background-color: pink;
+}
+
+.correct {
+  background: orange;
+}
+.wrong {
+  background: pink;
+}
+</style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+  <h1>moderit pain</h1>
+<ol>
+  <li>test question = <input data-correct=" it works" /></li>
+  <li>i think im codeing this right <input data-correct="it works" /></li>
+  <li> worst pizza toping = <input data-correct="pineapple" /></li>
+  <li>i dont know what to put here <input data-correct="true"true /></li>
+    <li>open for a video in html <input data-correct="<video" /></li>
+  <li> closing for a video in html <input data-correct="</video>" /></li>
+    <li>the hight of this video <input data-correct="900" /></li>
+    <li>the with of the video <input data-correct="900" /></li>
+    <li> i tryed to get it to work for hurs<input data-correct="true" /></li>
+    <li> but you have to name a mp4 the right thing for it to work <input data-correct="true" /></li>
+</ol>
+<video controls autoplay>
+  <source src="what ever video you name" type="video/mp4">
+  <source src="" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  
+      <script id="rendered-js" >
+console.clear();
+
+$("input").change(onChange);
+
+function onChange(evt) {
+  let correct = $(this).data("correct");
+  let response = $(this).val();
+  if (correct == response) {
+    $(this).removeClass("wrong").addClass("correct");
+  } else {
+    $(this).removeClass("correct").addClass("wrong");
+  }
+}
+    </script>
+
+  
+
+</body>
+
+</html>
